@@ -240,6 +240,10 @@ li {
   text-transform: capitalize;
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
@@ -277,7 +281,7 @@ nav {
 /*styling for navlist start here*/
 .navlist {
   display: flex;
-  flex-basis: 60%;
+  flex-basis: 55%;
   justify-content: space-between;
 }
 
@@ -290,7 +294,7 @@ nav {
 
 .navlist li a {
   color: #FFF;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -312,21 +316,21 @@ nav {
   color: transparent;
 }
 
-.social-site-list :first-child a::before {
+.social-site-list :first-child ::before {
   content: "\f082";
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
 }
 
-.social-site-list :nth-child(2) a::before {
+.social-site-list :nth-child(2) ::before {
   content: "\f099";
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
 }
 
-.social-site-list :last-child a::before {
+.social-site-list :last-child ::before {
   content: "\f16d";
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
@@ -348,6 +352,11 @@ nav {
   margin: 0;
 }
 
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
 .slider {
   max-height: 630px;
   top: 0;
@@ -360,19 +369,25 @@ nav {
 
 .banner-content {
   width: 100%;
-  padding: 185px 0;
+  height: 100%;
+  display: flex;
   position: absolute;
   top: 0;
+  align-items: center;
   background-color: rgb(0, 0, 0, 0.6);
-  text-align: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner-content h2 {
-  color: rgb(229, 229, 229);
-  font-size: 55px;
+  width: 100%;
+  padding-top: 160px;
+  color: #FFF;
+  font-size: 50px;
   font-weight: bold;
   text-transform: capitalize;
-  letter-spacing: 1px;
+  text-align: center;
+  letter-spacing: 4px;
 }
 
 .line-break::before {
@@ -382,6 +397,60 @@ nav {
 
 .banner-btns {
   padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 16%;
+}
+
+.banner-btns a {
+  padding: 10px 8%;
+  border: 1px solid #FFF;
+  border-radius: 3px;
+  color: #FFF;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.banner-content ul {
+  width: 43%;
+  padding-top: 105px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-content ul li {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.banner-content ul li span {
+  padding-right: 15%;
+  font-size: 23px;
+}
+
+.dot-list {
+  width: 100%;
+  padding-top: 70px;
+  text-align: end;
+}
+
+.dot-list a {
+  margin-right: 1%;
+  color: transparent;
+  text-indent: -30px;
+}
+
+.dot-list a::before {
+  content: "\f5f1";
+  color: #FFF;
+  font-size: 10px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
 }
 
 /*=================================

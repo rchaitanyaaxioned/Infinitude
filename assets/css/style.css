@@ -243,11 +243,16 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
 header .wrapper {
   padding: 15px 0;
   display: flex;
   border-bottom: 1px solid #686861;
-  background-color: antiquewhite;
   justify-content: space-between;
 }
 
@@ -261,6 +266,7 @@ h1 {
   order: 2;
 }
 
+/*styling for nav start here*/
 nav {
   display: flex;
   flex-basis: 65%;
@@ -268,6 +274,7 @@ nav {
   order: 3;
 }
 
+/*styling for navlist start here*/
 .navlist {
   display: flex;
   flex-basis: 60%;
@@ -293,6 +300,8 @@ nav {
   justify-content: space-between;
 }
 
+/*styling for navlist end here*/
+/*styling for social site list start here*/
 .social-site-list {
   display: flex;
   flex-basis: 35%;
@@ -324,6 +333,8 @@ nav {
   text-indent: 0;
 }
 
+/*styling for social site list end here*/
+/*styling for nav end here*/
 /*=================================
   Header styling ends here
 =================================*/
@@ -331,13 +342,47 @@ nav {
 /*=================================
   main styling starts here
 =================================*/
+.banner-section .wrapper {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+}
 
+.slider {
+  max-height: 630px;
+  top: 0;
+  overflow: hidden;
+}
 
+.slider :not(:first-child) {
+  display: none;
+}
 
+.banner-content {
+  width: 100%;
+  padding: 185px 0;
+  position: absolute;
+  top: 0;
+  background-color: rgb(0, 0, 0, 0.6);
+  text-align: center;
+}
 
+.banner-content h2 {
+  color: rgb(229, 229, 229);
+  font-size: 55px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
 
+.line-break::before {
+  content: "\a";
+  white-space: pre;
+}
 
-
+.banner-btns {
+  padding-top: 40px;
+}
 
 /*=================================
   main styling ends here

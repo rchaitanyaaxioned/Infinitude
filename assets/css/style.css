@@ -254,7 +254,7 @@ header {
 }
 
 header .wrapper {
-  padding: 15px 0;
+  padding: 17px 0;
   display: flex;
   border-bottom: 1px solid #686861;
   justify-content: space-between;
@@ -273,7 +273,7 @@ h1 {
 /*styling for nav start here*/
 nav {
   display: flex;
-  flex-basis: 65%;
+  flex-basis: 57%;
   justify-content: space-between;
   order: 3;
 }
@@ -281,26 +281,44 @@ nav {
 /*styling for navlist start here*/
 .navlist {
   display: flex;
-  flex-basis: 55%;
+  flex-basis: 78%;
   justify-content: space-between;
 }
 
-.navlist :nth-child(3) ::after {
+.navlist :nth-child(3)::after {
   content: "\f41f";
   color: #FFF;
+  font-size: 9px;
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
+  transition: color 0.5s ease;
+}
+
+.navlist :nth-child(3):hover::after {
+  color: #D3930F;
 }
 
 .navlist li a {
   color: #FFF;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.5s ease;
+}
+
+.navlist li a:hover {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #D3930F;
+  color: #D3930F;
+
 }
 
 .sub-page-list {
+  position: absolute;
   display: none;
+  background-color: #666;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -308,33 +326,47 @@ nav {
 /*styling for social site list start here*/
 .social-site-list {
   display: flex;
-  flex-basis: 35%;
+  flex-basis: 16%;
+  align-items: center;
+  overflow: hidden;
   justify-content: space-between;
 }
 
+.social-site-list li {
+  width: 33.33%;
+  position: relative;
+}
+
 .social-site-list a {
-  color: transparent;
+  position: absolute;
+  text-indent: -9999px;
 }
 
 .social-site-list :first-child ::before {
+  position: absolute;
+  top: -5px;
   content: "\f082";
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
-  text-indent: 0;
+  text-indent: 9999px;
 }
 
 .social-site-list :nth-child(2) ::before {
+  position: absolute;
+  top: -5px;
   content: "\f099";
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
-  text-indent: 0;
+  text-indent: 9999px;
 }
 
 .social-site-list :last-child ::before {
+  position: absolute;
+  top: -5px;
   content: "\f16d";
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
-  text-indent: 0;
+  text-indent: 9999px;
 }
 
 /*styling for social site list end here*/
@@ -382,13 +414,13 @@ nav {
 
 .banner-content h2 {
   width: 100%;
-  padding-top: 160px;
+  padding-top: 155px;
   color: #FFF;
   font-size: 50px;
   font-weight: bold;
   text-transform: capitalize;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 .line-break::before {
@@ -397,19 +429,20 @@ nav {
 }
 
 .banner-btns {
+  width: 17%;
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
-  width: 16%;
 }
 
 .banner-btns a {
-  padding: 10px 8%;
-  border: 1px solid #FFF;
+  padding: 10px 9%;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 3px;
-  color: #FFF;
-  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
   text-transform: capitalize;
+  letter-spacing: 1px;
 }
 
 .banner-content ul {
@@ -449,7 +482,7 @@ nav {
 .dot-list a::before {
   content: "\f5f1";
   color: #FFF;
-  font-size: 10px;
+  font-size: 7px;
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
 }

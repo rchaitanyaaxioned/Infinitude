@@ -816,7 +816,7 @@ footer {
   text-indent: 999px;
 }
 
-.upper-footer .wrapper :nth-child(2) h5 {
+.quick-links h5 {
   padding-left: 5%;
   font-size: 15px;
   text-transform: capitalize;
@@ -854,14 +854,92 @@ footer {
   font-family: "Font Awesome 5 Solids";
 }
 
-.uf-contact-info {
-  color: #FFF;
+.uf-contact-info h5 {
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.upper-footer .wrapper .uf-contact-info div {
+  width: 100%;
+  color: #787878;
+  font-size: 12px;
+}
+
+.ci-address {
+  margin-top: 30px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.phone a,
+.tele-phone a,
+.mail a {
+  margin-top: 15px;
+  color: #787878;
+}
+
+.ci-address::before {
+  padding-right: 1%;
+  content: "\f3c5";
+  font-size: 13px;
+  font-family: "Font Awesome 5 Solids";
+}
+
+.phone::before {
+  padding-right: 1%;
+  content: "\f095";
+  font-size: 13px;
+  font-family: "Font Awesome 5 Solids";
+}
+
+.tele-phone::before {
+  padding-right: 1%;
+  content: "\f67d";
+  font-size: 13px;
+  font-family: "Font Awesome 5 Solids";
+}
+
+.mail::before {
+  padding-right: 1%;
+  content: "\f0e0";
+  font-size: 13px;
+  font-family: "Font Awesome 5 Solids";
 }
 
 /*upper footer styling end here*/
 
+/*lower footer styling start here*/
+.lf-content {
+  padding: 25px 0 30px 0;
+  display: flex;
+  position: relative;
+  color: #DDECE8;
+  justify-content: space-between;
+}
 
+.lf-content p,
+a {
+  color: #DDECE8;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
 
+.lf-content a {
+  position: absolute;
+  text-indent: -9999px;
+}
+
+.lf-content a::before {
+  position: absolute;
+  content: "\f102";
+  font-size: 15px;
+  font-family: "Font Awesome 5 Solid";
+  text-indent: 9999px;
+}
+
+/*lower footer styling end here*/
 
 /*=================================
   footer styling ends here

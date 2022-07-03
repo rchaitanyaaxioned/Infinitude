@@ -543,6 +543,83 @@ nav {
 
 /*styling for agencies section end here*/
 
+/*styling for blog section start here*/
+.blog .wrapper {
+  max-width: 100%;
+  width: 100%;
+}
+
+.blog h3 {
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.blog-list {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-list li {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.blog-list li figure {
+  flex-basis: 50%;
+  order: 1;
+}
+
+.blog-list li div {
+  padding: 40px;
+  background-color: #1B1F24;
+  flex-basis: 50%;
+  order: 2;
+}
+
+.blog-info span {
+  color: #FEAD00;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.blog-info h4 {
+  padding-top: 10px;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.blog-info p {
+  padding-top: 10px;
+  color: #EAEAF0;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.blog-list :nth-child(3) figure {
+  order: 2;
+}
+
+.blog-list :nth-child(3) div {
+  order: 1;
+}
+
+.blog-list :last-child figure {
+  order: 2;
+}
+
+.blog-list :last-child div {
+  order: 1;
+}
+
+/*styling for blog section end here*/
 
 
 /*=================================

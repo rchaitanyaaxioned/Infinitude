@@ -346,6 +346,7 @@ nav {
 /*=================================
   main styling starts here
 =================================*/
+/*styling for banner section start here*/
 .banner-section .wrapper {
   max-width: 100%;
   width: 100%;
@@ -452,6 +453,97 @@ nav {
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
 }
+
+/*styling for banner section end here*/
+/*styling for agencies section start here*/
+.agencies {
+  padding-top: 75px;
+  padding-bottom: 90px;
+  background-color: #F7F7F7;
+}
+
+.agencies-article {
+  padding-bottom: 40px;
+  display: flex;
+  border-bottom: 2px solid #E6E6E6;
+  justify-content: space-between;
+}
+
+.agencies-article figure img {
+  max-width: 425px;
+  max-height: 285px;
+  border-radius: 3px;
+}
+
+.agencies-info {
+  padding-left: 3%;
+  flex-basis: 50%;
+}
+
+.agencies-info h4 {
+  padding-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 30px;
+}
+
+.agencies-info p {
+  margin-top: 20px;
+  color: #AD9C94;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.agencies-info a {
+  margin-top: 30px;
+  padding: 10px 5%;
+  background-color: #FEAD00;
+  border: 1px solid #FEAD00;
+  border-radius: 4px;
+  color: #2D451E;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.agencies-list {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.agencies-list li {
+  flex-basis: 30%;
+}
+
+.agencies-list h5 {
+  display: flex;
+  align-items: flex-start;
+  color: #1D2531;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.agencies-list p {
+  padding-left: 20%;
+  color: #A08B8F;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.agencies-list li h5::before {
+  padding-right: 10%;
+  content: "\f5f1";
+  color: #FFC102;
+  font-size: 25px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+}
+
+/*styling for agencies section end here*/
+
+
 
 /*=================================
   main styling ends here

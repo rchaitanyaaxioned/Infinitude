@@ -705,9 +705,6 @@ nav {
 }
 
 /*styling for testimonials section end here*/
-
-
-
 /*=================================
   main styling ends here
 =================================*/
@@ -715,9 +712,153 @@ nav {
 /*=================================
   footer styling starts here
 =================================*/
+/*upper footer styling start here*/
+footer {
+  background-color: #1B1B1B;
+  color: #FFF;
+}
 
+.upper-footer {
+  padding: 80px 0 60px 0;
+  border-bottom: 1px solid #333;
+}
 
+.upper-footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
+.upper-footer .wrapper div {
+  width: 33.33%;
+}
+
+.infinitude h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.infinitude p {
+  margin-top: 20px;
+  color: #787878;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.infinitude span {
+  margin-top: 10px;
+  display: inline-block;
+  color: #787878;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.infinitude .yellow-span {
+  color: #FCA800;
+}
+
+.uf-social-list {
+  width: 50%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.uf-social-list li {
+  position: relative;
+}
+
+.uf-social-list a {
+  position: absolute;
+  color: #FFF;
+  text-indent: -999px;
+}
+
+.uf-social-list :first-child ::before {
+  position: absolute;
+  content: "\f39e";
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 999px;
+}
+
+.uf-social-list :nth-child(2) ::before {
+  position: absolute;
+  content: "\f099";
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 999px;
+}
+
+.uf-social-list :nth-child(3) ::before {
+  position: absolute;
+  content: "\f434";
+  font-size: 15px;
+  font-family: "Font Awesome 5 Solid";
+  text-indent: 999px;
+}
+
+.uf-social-list :nth-child(4) ::before {
+  position: absolute;
+  content: "\f0d2";
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 999px;
+}
+
+.uf-social-list :last-child ::before {
+  position: absolute;
+  content: "\f0d5";
+  font-size: 15px;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 999px;
+}
+
+.upper-footer .wrapper :nth-child(2) h5 {
+  padding-left: 5%;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.upper-footer .wrapper :nth-child(2) div {
+  width: 80%;
+}
+
+.quick-lists {
+  padding-left: 5%;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quick-lists ul {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+}
+
+.quick-lists ul a {
+  width: 100%;
+  color: #787878;
+  font-size: 12px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.quick-lists ul a::before {
+  content: "\f101";
+  font-size: 13px;
+  font-family: "Font Awesome 5 Solids";
+}
+
+.uf-contact-info {
+  color: #FFF;
+}
+
+/*upper footer styling end here*/
 
 
 

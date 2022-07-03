@@ -294,10 +294,6 @@ nav {
   transition: color 0.5s ease;
 }
 
-.navlist :nth-child(3):hover::after {
-  color: #D3930F;
-}
-
 .navlist li a {
   color: #FFF;
   font-size: 9px;
@@ -305,13 +301,6 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.5s ease;
-}
-
-.navlist li a:hover {
-  padding-bottom: 3px;
-  border-bottom: 1px solid #D3930F;
-  color: #D3930F;
-
 }
 
 .sub-page-list {
@@ -349,6 +338,7 @@ nav {
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
   text-indent: 9999px;
+  transition: color 0.5s ease;
 }
 
 .social-site-list :nth-child(2) ::before {
@@ -358,6 +348,7 @@ nav {
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
   text-indent: 9999px;
+  transition: color 0.5s ease;
 }
 
 .social-site-list :last-child ::before {
@@ -367,6 +358,7 @@ nav {
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
   text-indent: 9999px;
+  transition: color 0.5s ease;
 }
 
 /*styling for social site list end here*/
@@ -437,12 +429,20 @@ nav {
 
 .banner-btns a {
   padding: 10px 9%;
-  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  border: 1px solid #FFF;
   border-radius: 3px;
-  color: rgb(255, 255, 255);
+  color: #FFF;
   font-size: 13px;
   text-transform: capitalize;
   letter-spacing: 1px;
+  transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
+}
+
+.banner-btns a:hover {
+  background-color: #FEAD00;
+  border: 1px solid #FEAD00;
+  color: #000;
 }
 
 .banner-content ul {
@@ -979,5 +979,31 @@ a {
 =================================*/
 
 /*media query starts*/
+/* remove hover effet from mobile */
+@media only screen and (min-width: 1024px) {
+  .navlist :nth-child(3):hover::after {
+    color: #D3930F;
+  }
+
+  .navlist li a:hover {
+    padding-bottom: 3px;
+    border-bottom: 1px solid #D3930F;
+    color: #D3930F;
+  }
+
+  .social-site-list :first-child:hover::before {
+    color: #D3930F;
+  }
+
+  .social-site-list :nth-child(2):hover::before {
+    color: #D3930F;
+  }
+
+  .social-site-list :last-child:hover::before {
+    color: #D3930F;
+  }
+
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {}

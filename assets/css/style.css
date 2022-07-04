@@ -1078,5 +1078,102 @@ a {
   }
 }
 
+/*media query for 1301px starts here*/
+@media only screen and (max-width: 1301px) {
+  header .wrapper {
+    padding: 13px 0;
+    display: flex;
+    border-bottom: 1px solid #686861;
+    justify-content: space-between;
+  }
+
+  .navlist li a {
+    color: #FFF;
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.5s ease;
+  }
+
+  .banner-content h2 {
+    width: 100%;
+    padding-top: 100px;
+    color: #FFF;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  .banner-btns {
+    width: 19%;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner-btns a {
+    padding: 10px 8%;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 13px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
+  }
+
+  .banner-content ul {
+    width: 43%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .agencies-info h4 {
+    padding-top: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  .agencies-info p {
+    margin-top: 5px;
+    color: #898E9D;
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .agencies-info a {
+    margin-top: 15px;
+    padding: 10px 5%;
+    background-color: #FEAD00;
+    border: 1px solid #FEAD00;
+    border-radius: 4px;
+    color: #2D451E;
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
+  }
+
+  .testimonial-list {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .testimonial-list li {
+    padding: 40px;
+    background-color: #FFF;
+    flex-basis: 20%;
+  }
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {}

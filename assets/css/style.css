@@ -502,6 +502,10 @@ nav {
   justify-content: space-between;
 }
 
+.agencies-article figure {
+  flex-basis: 50%;
+}
+
 .agencies-article figure img {
   max-width: 425px;
   max-height: 285px;
@@ -509,21 +513,22 @@ nav {
 }
 
 .agencies-info {
-  padding-left: 3%;
+  padding-left: 2%;
   flex-basis: 50%;
 }
 
 .agencies-info h4 {
-  padding-top: 5px;
+  padding-top: 3px;
   font-size: 20px;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .agencies-info p {
-  margin-top: 20px;
-  color: #AD9C94;
+  margin-top: 10px;
+  color: #898E9D;
   font-size: 12px;
   line-height: 20px;
 }
@@ -537,6 +542,7 @@ nav {
   color: #2D451E;
   font-size: 15px;
   text-transform: capitalize;
+  transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
 }
 
 .agencies-list {
@@ -561,7 +567,7 @@ nav {
 .agencies-list p {
   padding-left: 20%;
   color: #A08B8F;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -583,11 +589,12 @@ nav {
 }
 
 .blog h3 {
-  padding-top: 10px;
+  padding-top: 3px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
   text-transform: capitalize;
+  letter-spacing: 1px;
 }
 
 .blog-list {
@@ -599,16 +606,17 @@ nav {
 .blog-list li {
   display: flex;
   flex-basis: 50%;
+  justify-content: space-between;
 }
 
 .blog-list li figure {
-  flex-basis: 50%;
+  flex-basis: 63%;
   order: 1;
 }
 
 .blog-list li div {
-  padding: 40px;
-  background-color: #1B1F24;
+  padding: 30px 5%;
+  background-color: rgb(27, 31, 36);
   flex-basis: 50%;
   order: 2;
 }
@@ -621,7 +629,7 @@ nav {
 }
 
 .blog-info h4 {
-  padding-top: 10px;
+  padding-top: 5px;
   color: #FFF;
   font-size: 17px;
   font-weight: bold;
@@ -630,8 +638,8 @@ nav {
 }
 
 .blog-info p {
-  padding-top: 10px;
-  color: #EAEAF0;
+  padding-top: 5px;
+  color: #F7F7F9;
   font-size: 12px;
   line-height: 20px;
 }
@@ -812,41 +820,51 @@ footer {
 .uf-social-list :first-child ::before {
   position: absolute;
   content: "\f39e";
+  color: #FFF;
   font-size: 15px;
   font-family: "Font Awesome 5 Brands";
   text-indent: 999px;
+  transition: color 0.5s ease;
 }
 
 .uf-social-list :nth-child(2) ::before {
   position: absolute;
   content: "\f099";
+  color: #FFF;
   font-size: 15px;
   font-family: "Font Awesome 5 Brands";
   text-indent: 999px;
+  transition: color 0.5s ease;
 }
 
 .uf-social-list :nth-child(3) ::before {
   position: absolute;
   content: "\f434";
+  color: #FFF;
   font-size: 15px;
   font-family: "Font Awesome 5 Solid";
   text-indent: 999px;
+  transition: color 0.5s ease;
 }
 
 .uf-social-list :nth-child(4) ::before {
   position: absolute;
   content: "\f0d2";
+  color: #FFF;
   font-size: 15px;
   font-family: "Font Awesome 5 Brands";
   text-indent: 999px;
+  transition: color 0.5s ease;
 }
 
 .uf-social-list :last-child ::before {
   position: absolute;
   content: "\f0d5";
+  color: #FFF;
   font-size: 15px;
   font-family: "Font Awesome 5 Brands";
   text-indent: 999px;
+  transition: color 0.5s ease;
 }
 
 .quick-links h5 {
@@ -879,6 +897,7 @@ footer {
   font-size: 12px;
   text-transform: capitalize;
   letter-spacing: 1px;
+  transition: color 0.7s ease 0.1s;
 }
 
 .quick-lists ul a::before {
@@ -910,6 +929,7 @@ footer {
 .mail a {
   margin-top: 15px;
   color: #787878;
+  transition: color 0.7s ease 0.1s;
 }
 
 .ci-address::before {
@@ -922,22 +942,28 @@ footer {
 .phone::before {
   padding-right: 1%;
   content: "\f095";
+  color: #787878;
   font-size: 13px;
   font-family: "Font Awesome 5 Solids";
+  transition: color 0.7s ease 0.1s;
 }
 
 .tele-phone::before {
   padding-right: 1%;
   content: "\f67d";
+  color: #787878;
   font-size: 13px;
   font-family: "Font Awesome 5 Solids";
+  transition: color 0.7s ease 0.1s;
 }
 
 .mail::before {
   padding-right: 1%;
   content: "\f0e0";
+  color: #787878;
   font-size: 13px;
   font-family: "Font Awesome 5 Solids";
+  transition: color 0.7s ease 0.1s;
 }
 
 /*upper footer styling end here*/
@@ -967,9 +993,11 @@ a {
 .lf-content a::before {
   position: absolute;
   content: "\f102";
+  color: #DDECE8;
   font-size: 15px;
   font-family: "Font Awesome 5 Solid";
   text-indent: 9999px;
+  transition: color 0.7s ease 0.1s;
 }
 
 /*lower footer styling end here*/
@@ -1003,6 +1031,51 @@ a {
     color: #D3930F;
   }
 
+  .agencies-info a:hover {
+    background-color: #FFF;
+    border: 1ps solid #FEAD00;
+    color: #FEAD00;
+  }
+
+  .uf-social-list :first-child :hover::before {
+    color: #FEAD00;
+  }
+
+  .uf-social-list :nth-child(2) :hover::before {
+    color: #FEAD00;
+  }
+
+  .uf-social-list :nth-child(3) :hover::before {
+    color: #FEAD00;
+  }
+
+  .uf-social-list :nth-child(4) :hover::before {
+    color: #FEAD00;
+  }
+
+  .uf-social-list :last-child :hover::before {
+    color: #FEAD00;
+  }
+
+  .quick-lists ul a:hover {
+    color: #FEAD00;
+  }
+
+  .phone a:hover,
+  .tele-phone a:hover,
+  .mail a:hover {
+    color: #FEAD00;
+  }
+
+  .phone:hover::before,
+  .tele-phone:hover::before,
+  .mail:hover::before {
+    color: #FEAD00;
+  }
+
+  .lf-content a:hover::before {
+    color: #FEAD00;
+  }
 }
 
 /*media query for 995px starts here*/

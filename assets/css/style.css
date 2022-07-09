@@ -254,6 +254,7 @@ header {
 }
 
 header .wrapper {
+  width: 59%;
   padding: 17px 0;
   display: flex;
   border-bottom: 1px solid #686861;
@@ -282,21 +283,27 @@ nav {
 .navlist {
   display: flex;
   flex-basis: 78%;
-  justify-content: space-between;
 }
 
-.navlist :nth-child(3)::after {
+.navlist li {
+  margin-right: 9%;
+  margin-left: 1%;
+}
+
+.navlist :nth-child(3) a::after {
+  margin-left: 5%;
   content: "\f41f";
   color: #FFF;
-  font-size: 9px;
+  font-size: 7px;
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
   transition: color 0.5s ease;
 }
 
 .navlist li a {
+  padding-top: 7px;
   color: #FFF;
-  font-size: 9px;
+  font-size: 9.4px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -304,11 +311,27 @@ nav {
 }
 
 .sub-page-list {
-  position: absolute;
+  width: 5%;
   display: none;
-  background-color: #666;
+  position: absolute;
+  top: 35px;
+  background-color: rgb(0, 0, 0, 0.5);
   flex-direction: column;
   justify-content: space-between;
+}
+
+.sub-page-list li {
+  width: 100%;
+  height: 20px;
+}
+
+.sub-page-list li a {
+  width: 100%;
+  text-align: center;
+}
+
+.sub-page-list li a::after {
+  display: none;
 }
 
 /*styling for navlist end here*/
@@ -317,23 +340,23 @@ nav {
   display: flex;
   flex-basis: 16%;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   justify-content: space-between;
 }
 
 .social-site-list li {
   width: 33.33%;
-  position: relative;
+  /* position: relative; */
 }
 
 .social-site-list a {
-  position: absolute;
+  /* position: absolute; */
   text-indent: -9999px;
 }
 
-.social-site-list :first-child ::before {
-  position: absolute;
-  top: -5px;
+.social-site-list :first-child a::before {
+  /* position: absolute; */
+  /* top: -5px; */
   content: "\f082";
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
@@ -341,9 +364,9 @@ nav {
   transition: color 0.5s ease;
 }
 
-.social-site-list :nth-child(2) ::before {
-  position: absolute;
-  top: -5px;
+.social-site-list :nth-child(2) a::before {
+  /* position: absolute; */
+  /* top: -5px; */
   content: "\f099";
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
@@ -351,9 +374,9 @@ nav {
   transition: color 0.5s ease;
 }
 
-.social-site-list :last-child ::before {
-  position: absolute;
-  top: -5px;
+.social-site-list :last-child a::before {
+  /* position: absolute; */
+  /* top: -5px; */
   content: "\f16d";
   color: #FFF;
   font-family: "Font Awesome 5 Brands";
@@ -383,9 +406,9 @@ nav {
 }
 
 .slider {
-  max-height: 630px;
-  top: 0;
+  position: absolute;
   overflow: hidden;
+  z-index: -1;
 }
 
 .slider :not(:first-child) {
@@ -393,11 +416,7 @@ nav {
 }
 
 .banner-content {
-  width: 100%;
-  height: 100%;
   display: flex;
-  position: absolute;
-  top: 0;
   align-items: center;
   background-color: rgb(0, 0, 0, 0.6);
   flex-direction: column;
@@ -406,13 +425,13 @@ nav {
 
 .banner-content h2 {
   width: 100%;
-  padding-top: 155px;
-  color: #FFF;
+  padding-top: 178px;
+  color: rgb(255, 255, 255);
   font-size: 50px;
   font-weight: bold;
   text-transform: capitalize;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
 
 .line-break::before {
@@ -421,21 +440,21 @@ nav {
 }
 
 .banner-btns {
-  width: 17%;
+  width: 100%;
   padding-top: 40px;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .banner-btns a {
-  padding: 10px 9%;
+  padding: 10px 1.5%;
+  margin: 0 0.2%;
   background-color: transparent;
   border: 1px solid #FFF;
   border-radius: 3px;
   color: #FFF;
   font-size: 13px;
-  text-transform: capitalize;
   letter-spacing: 1px;
+  text-transform: capitalize;
   transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
 }
 
@@ -446,14 +465,15 @@ nav {
 }
 
 .banner-content ul {
-  width: 43%;
+  width: 100%;
   padding-top: 105px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-content ul li {
-  width: 20%;
+  margin: 0 6% 0 2%;
   display: flex;
   align-items: center;
   color: #FFF;
@@ -463,18 +483,18 @@ nav {
 }
 
 .banner-content ul li span {
-  padding-right: 15%;
+  padding-right: 20%;
   font-size: 23px;
 }
 
 .dot-list {
   width: 100%;
-  padding-top: 70px;
+  padding: 70px 0 40px 0;
   text-align: end;
 }
 
 .dot-list a {
-  margin-right: 1%;
+  margin-right: 0.8%;
   color: transparent;
   text-indent: -30px;
 }
@@ -519,7 +539,7 @@ nav {
 
 .agencies-info h4 {
   padding-top: 3px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 30px;
@@ -527,20 +547,21 @@ nav {
 }
 
 .agencies-info p {
-  margin-top: 10px;
-  color: #898E9D;
+  margin-top: 5px;
+  color: #96909B;
   font-size: 12px;
   line-height: 20px;
 }
 
 .agencies-info a {
-  margin-top: 30px;
+  margin-top: 15px;
   padding: 10px 5%;
   background-color: #FEAD00;
   border: 1px solid #FEAD00;
   border-radius: 4px;
   color: #2D451E;
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: bold;
   text-transform: capitalize;
   transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
 }
@@ -668,6 +689,9 @@ nav {
   background-image: url("/assets/Images/banner3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.testimonials>.wrapper {
   background-color: rgb(0, 0, 0, 0.5);
 }
 
@@ -1009,8 +1033,12 @@ a {
 /*media query starts*/
 /* remove hover effet from mobile */
 @media only screen and (min-width: 1024px) {
-  .navlist :nth-child(3):hover::after {
+  .navlist :nth-child(3) a:hover::after {
     color: #D3930F;
+  }
+
+  .navlist :nth-child(3) :hover+.sub-page-list {
+    display: flex;
   }
 
   .navlist li a:hover {

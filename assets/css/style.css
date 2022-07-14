@@ -250,6 +250,7 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+/*styling for header start here*/
 header {
   width: 100%;
   position: absolute;
@@ -257,6 +258,106 @@ header {
 }
 
 header .wrapper {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #686861;
+  justify-content: space-between;
+}
+/*styling for h1 start here*/
+h1 {
+  flex-basis: 40%;
+  order: 1;
+}
+/*styling for h1 end here*/
+/*styling for hamburger start here*/
+.hamburger {
+  display: none;
+  order: 2;
+}
+/*styling for hamburger end here*/
+/*styling for nav-content start here*/
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 60%;
+  order: 3;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-basis: 80%;
+}
+
+.navlist {
+  margin: 0 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navlist a {
+  color: #F7F8F7;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.navlist .active-tab, .active-tab {
+  color: blue;
+}
+
+.sub-page-list {
+  display: none;
+}
+
+.social-site-list {
+  display: flex;
+  flex-basis: 20%;
+  overflow: hidden;
+}
+
+.social-site-list li {
+  margin: 0 16.5%;
+}
+
+.sbrand {
+  text-indent: -999px;
+}
+
+.sbrand:hover {
+  color: red;
+}
+
+.fb::before {
+  position: absolute;
+  margin-right: 5%;
+  content: "\f082";
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 999px;
+}
+
+.tweet::before {
+  position: absolute;
+  margin-right: 5%;
+  content: "\f099";
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 999px;
+}
+
+.insta::before {
+  position: absolute;
+  margin-right: 5%;
+  content: "\f16d";
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 999px;
+}
+
+/*styling for nav-content end here*/
+/*styling for header end here*/
+
+/* header .wrapper {
   width: 59%;
   padding: 17px 0;
   display: -webkit-box;
@@ -284,7 +385,7 @@ h1 {
 }
 
 /*styling for nav start here*/
-nav {
+/* nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,10 +397,10 @@ nav {
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
-}
+} */
 
 /*styling for navlist start here*/
-.navlist {
+/* .navlist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,11 +464,11 @@ nav {
 
 .sub-page-list li a::after {
   display: none;
-}
+} */ 
 
 /*styling for navlist end here*/
 /*styling for social site list start here*/
-.social-site-list {
+/* .social-site-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,7 +477,7 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /* overflow: hidden; */
+  overflow: hidden;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -426,7 +527,7 @@ nav {
   -webkit-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
   transition: color 0.5s ease;
-}
+} */
 
 /*styling for social site list end here*/
 /*styling for nav end here*/
@@ -438,6 +539,7 @@ nav {
   main styling starts here
 =================================*/
 /*styling for banner section start here*/
+
 .banner-section .wrapper {
   max-width: 100%;
   width: 100%;
@@ -445,13 +547,29 @@ nav {
 }
 
 .banner {
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
 .slider {
+  width: 100%;
+  height: 100%;
   position: absolute;
   overflow: hidden;
+}
+
+.slider li {
+  width: 100%;
+  height: auto;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  position: relative;
   z-index: -1;
 }
 
@@ -460,31 +578,23 @@ nav {
 }
 
 .banner-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: 155px 0 110px 0;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  position: relative;
   align-items: center;
-  background-color: rgb(0, 0, 0, 0.6);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .banner-content h2 {
   width: 100%;
-  padding-top: 178px;
-  color: rgb(255, 255, 255);
-  font-size: 50px;
+  color: #FFF;
+  font-size: 40px;
   font-weight: bold;
   text-transform: capitalize;
   text-align: center;
-  letter-spacing: 4px;
+  line-height: 50px;
+  letter-spacing: 5px;
 }
 
 .line-break::before {
@@ -494,13 +604,56 @@ nav {
 
 .banner-btns {
   width: 100%;
-  padding-top: 40px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-btns li {
+  width: 9%;
+}
+
+.banner-btns a {
+  padding: 10px 19.5%;
+  background: transparent;
+  border: 1px solid #D9EBDF;
+  border-radius: 3px;
+  color: #D9EBDF;
+  font-size: 10px;
+}
+
+.banner-btns a:hover,.banner-btns .active-btn {
+  background-color: #FEAD00;
+  border: transparent;
+  color: #402C1B;
+}
+
+.banner-projects {
+  width: 100%;
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-projects li {
+  margin: 0 4%;
+  color: #FFF;
+}
+
+.text-project {
+  margin-right:1%;
+}
+
+/* .banner-btns {
+  width: 100%;
   text-align: center;
 }
 
 .banner-btns a {
-  padding: 10px 1.5%;
-  margin: 0 0.2%;
+  padding: 10px 1.5%; 
+  margin: 0 0.2%; 
   background-color: transparent;
   border: 1px solid #FFF;
   border-radius: 3px;
@@ -570,7 +723,7 @@ nav {
   font-size: 7px;
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
-}
+} */
 
 /*styling for banner section end here*/
 /*styling for agencies section start here*/
@@ -1201,7 +1354,7 @@ a {
 
 /*media query starts*/
 /*media query for 1280px start here*/
-@media only screen and (max-width:1280px) {
+/* @media only screen and (max-width:1280px) {
   .navlist {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1234,12 +1387,12 @@ a {
     font-size: 11px;
     line-height: 15px;
   }
-}
+} */
 
 /*media query for 1280px end here*/
 
 /*media query for 1210px start here*/
-@media only screen and (max-width: 1210px) {
+/* @media only screen and (max-width: 1210px) {
 
   .navlist li {
     margin-right: 5%;
@@ -1284,12 +1437,12 @@ a {
     -o-transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
     transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
   }
-}
+} */
 
 /*media query for 1210px end here*/
 
 /* media query for 1025px start here */
-@media only screen and (max-width: 1025px) {
+/* @media only screen and (max-width: 1025px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1329,12 +1482,12 @@ a {
   .blog-list li figure img {
     height: 100%;
   }
-}
+} */
 
 /* media query for 1025px end here */
 
 /* remove hover effet from mobile */
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
   .navlist :nth-child(3) a:hover::after {
     color: #D3930F;
   }
@@ -1408,13 +1561,13 @@ a {
   .lf-content a:hover::before {
     color: #FEAD00;
   }
-}
+} */
 
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+/* @media only screen and (max-width: 995px) { */
   /*styling for hamburger start here*/
 
-  h1 {
+  /* h1 {
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     -webkit-box-ordinal-group: 2;
@@ -1482,10 +1635,10 @@ a {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-  }
+  } */
 
   /*styling for hamburger end here*/
-  .navlist {
+  /* .navlist {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1755,4 +1908,4 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-}
+} */

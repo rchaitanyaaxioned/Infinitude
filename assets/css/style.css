@@ -790,9 +790,18 @@ nav {
 /*styling for testimonials section start here*/
 .testimonials {
   padding: 80px 0;
-  background-image: url("/assets/Images/banner3.jpg");
+  /* background-image: url("/assets/Images/banner3.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+}
+
+.testimonial-banner {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.testimonial-banner img {
+  position: relative;
+  z-index: -1;
 }
 
 .testimonials h3 {
@@ -809,6 +818,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;

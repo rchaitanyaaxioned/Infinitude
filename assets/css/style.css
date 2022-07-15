@@ -346,6 +346,8 @@ nav {
 }
 
 .sbrand {
+  color: #F7F8F7;
+  font-size: 9px;
   text-indent: -9999px;
   transition: color 0.5s ease, border-bottom 0.5s ease,transform 0.5s ease;
 }
@@ -711,10 +713,22 @@ h3 {
   font-size: 9px;
 }
 
+.blog-date-a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
 .blog-heading-a {
-  margin: 5px 0;
+  margin: 5px 0px;
+  color: #FFF;
   font-size: 15px;
   font-weight: bold;
+  text-transform: capitalize;
+}
+
+.blog-heading-a:hover {
+  color: #F59908;
+  text-decoration: underline;
 }
  
 .blog-info p {
@@ -763,6 +777,7 @@ h3 {
 }
 
 .testimonial-list li {
+  height: 100%;
   padding: 35px 5%;
   background-color: #FFF;
   -ms-flex-preferred-size: 22%;
@@ -847,7 +862,7 @@ footer {
 }
 
 .upper-footer {
-  padding: 80px 0 60px 0;
+  padding:60px 0;
   border-bottom: 1px solid #333;
 }
 
@@ -860,28 +875,33 @@ footer {
   justify-content: space-between;
 }
 
-.upper-footer .wrapper div {
+/* .upper-footer .wrapper div {
   width: 33.33%;
+} */
+/*styling for upper footer infinitude start here*/
+.infinitude {
+  flex-basis: 33.33%;
 }
 
-.infinitude h4 {
-  font-size: 20px;
+.span-infinitude {
+  display: block;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .infinitude p {
-  margin-top: 20px;
+  margin: 20px 0 7px 0;
   color: #787878;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 9px;
+  line-height: 18px;
 }
 
-.infinitude span {
-  margin-top: 10px;
-  display: inline-block;
+.sub-span-infinitude {
+  margin: 8px 0;
+  display: block;
   color: #787878;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -893,245 +913,212 @@ footer {
 
 .uf-social-list {
   width: 50%;
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin-top: 15px;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.uf-social-list li {
-  position: relative;
-}
-
-.uf-social-list a {
-  position: absolute;
+.uf-a {
   color: #FFF;
-  text-indent: -999px;
+  font-size: 10px;
+  text-indent: -9999px;
+  transition: color 0.5s ease, border-bottom 0.5s ease, transform 0.5s ease;
 }
 
-.uf-social-list :first-child ::before {
-  position: absolute;
+.uf-a:hover {
+  color: #F59908;
+  transform: scale(1.2, 1.2);
+  border-bottom: 1px solid #F59908;
+}
+
+.uf-fb::before {
+  margin-right: 5%;
   content: "\f39e";
-  color: #FFF;
-  font-size: 15px;
+  float: right;
   font-family: "Font Awesome 5 Brands";
-  text-indent: 999px;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+  text-indent: 0;
 }
 
-.uf-social-list :nth-child(2) ::before {
-  position: absolute;
+.uf-tweet::before {
+  margin-right: 5%;
   content: "\f099";
-  color: #FFF;
-  font-size: 15px;
+  float: right;
   font-family: "Font Awesome 5 Brands";
-  text-indent: 999px;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+  text-indent: 0;
 }
 
-.uf-social-list :nth-child(3) ::before {
-  position: absolute;
+.uf-basket::before {
+  margin-right: 5%;
   content: "\f434";
-  color: #FFF;
-  font-size: 15px;
-  font-family: "Font Awesome 5 Solid";
-  text-indent: 999px;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+  float: right;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
 }
 
-.uf-social-list :nth-child(4) ::before {
-  position: absolute;
+.uf-pint::before {
+  margin-right: 5%;
   content: "\f0d2";
-  color: #FFF;
-  font-size: 15px;
+  float: right;
   font-family: "Font Awesome 5 Brands";
-  text-indent: 999px;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+  text-indent: 0;
 }
 
-.uf-social-list :last-child ::before {
-  position: absolute;
+.uf-gp::before {
+  margin-right: 5%;
   content: "\f0d5";
-  color: #FFF;
-  font-size: 15px;
+  float: right;
   font-family: "Font Awesome 5 Brands";
-  text-indent: 999px;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+  text-indent: 0;
+}
+/*styling for upper footer infinitude end here*/
+/*styling for upper footer quick links start here*/
+.quick-links {
+  flex-basis: 33.33%;
 }
 
-.quick-links h5 {
-  padding-left: 5%;
-  font-size: 15px;
+.span-ql {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
   text-transform: capitalize;
-  letter-spacing: 1px;
-}
-
-.upper-footer .wrapper :nth-child(2) div {
-  width: 80%;
 }
 
 .quick-lists {
-  padding-left: 5%;
-  margin-top: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: 20px 0;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
-.quick-lists ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.ql-first, .ql-second {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+  flex-basis: 50%;
   flex-direction: column;
   line-height: 25px;
 }
 
-.quick-lists ul a {
+.quick-lists a {
   width: 100%;
   color: #787878;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: capitalize;
   letter-spacing: 1px;
-  -webkit-transition: color 0.7s ease 0.1s;
-  -o-transition: color 0.7s ease 0.1s;
-  transition: color 0.7s ease 0.1s;
+  transition: color 0.5s ease, border-bottom 0.5s ease, transform 0.5s ease;
 }
 
-.quick-lists ul a::before {
+.quick-lists a:hover {
+  color: #F59908;
+  transform: scale(1.2, 1.2);
+  border-bottom: 1px solid #F59908;
+}
+
+.quick-lists a::before {
+  margin: 0 2%;
   content: "\f101";
   font-size: 13px;
   font-family: "Font Awesome 5 Solids";
 }
-
-.uf-contact-info h5 {
-  font-size: 15px;
-  text-transform: capitalize;
-  letter-spacing: 1px;
+/*styling for upper footer quick links end here*/
+/*styling for upper footer contact info start here*/
+.uf-contact-info {
+  flex-basis: 33.33%;
 }
 
-.upper-footer .wrapper .uf-contact-info div {
+.span-ci {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.contact-info-list {
+  margin: 20px 0;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  line-height: 25px;
+}
+
+.contact-info-list a {
   width: 100%;
   color: #787878;
-  font-size: 12px;
-}
-
-.ci-address {
-  margin-top: 30px;
+  font-size: 10px;
   text-transform: capitalize;
   letter-spacing: 1px;
+  transition: color 0.5s ease, border-bottom 0.5s ease, transform 0.5s ease;
 }
 
-.phone a,
-.tele-phone a,
-.mail a {
-  margin-top: 15px;
-  color: #787878;
-  -webkit-transition: color 0.7s ease 0.1s;
-  -o-transition: color 0.7s ease 0.1s;
-  transition: color 0.7s ease 0.1s;
+.contact-info-list a:hover {
+  color: #F59908;
+  transform: scale(1.2, 1.2);
+  border-bottom: 1px solid #F59908;
 }
 
-.ci-address::before {
-  padding-right: 1%;
+.ci-address-a::before {
+  padding:0 1%;
   content: "\f3c5";
-  font-size: 13px;
+  font-size: 10px;
   font-family: "Font Awesome 5 Solids";
 }
 
-.phone::before {
-  padding-right: 1%;
+.ci-phone-a::before {
+  padding: 0 1%;
   content: "\f095";
-  color: #787878;
-  font-size: 13px;
+  font-size: 10px;
   font-family: "Font Awesome 5 Solids";
-  -webkit-transition: color 0.7s ease 0.1s;
-  -o-transition: color 0.7s ease 0.1s;
-  transition: color 0.7s ease 0.1s;
 }
 
-.tele-phone::before {
-  padding-right: 1%;
+.ci-telephone-a::before {
+  padding: 0 1%;
   content: "\f67d";
-  color: #787878;
-  font-size: 13px;
+  font-size: 10px;
   font-family: "Font Awesome 5 Solids";
-  -webkit-transition: color 0.7s ease 0.1s;
-  -o-transition: color 0.7s ease 0.1s;
-  transition: color 0.7s ease 0.1s;
 }
 
-.mail::before {
-  padding-right: 1%;
+.ci-mail-a::before {
+  padding: 0 1%;
   content: "\f0e0";
-  color: #787878;
-  font-size: 13px;
+  font-size: 10px;
   font-family: "Font Awesome 5 Solids";
-  -webkit-transition: color 0.7s ease 0.1s;
-  -o-transition: color 0.7s ease 0.1s;
-  transition: color 0.7s ease 0.1s;
 }
-
+/*styling for upper footer contact info end here*/
 /*upper footer styling end here*/
 
 /*lower footer styling start here*/
 .lf-content {
   padding: 25px 0 30px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   color: #DDECE8;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.lf-content p,
-a {
+.lf-span {
   color: #DDECE8;
-  font-size: 13px;
+  font-size: 10px;
   letter-spacing: 1px;
   text-transform: capitalize;
 }
 
-.lf-content a {
-  position: absolute;
+.lf-top-a {
+  color: #FFF;
+  font-size: 10px;
   text-indent: -9999px;
+  transition: color 0.5s ease, border-bottom 0.5s ease, transform 0.5s ease;
 }
 
-.lf-content a::before {
-  position: absolute;
-  content: "\f102";
-  color: #DDECE8;
-  font-size: 15px;
-  font-family: "Font Awesome 5 Solid";
-  text-indent: 9999px;
-  -webkit-transition: color 0.7s ease 0.1s;
-  -o-transition: color 0.7s ease 0.1s;
-  transition: color 0.7s ease 0.1s;
+.lf-top-a::before {
+  margin-right: 5%;
+  content: "\f834";
+  float: right;
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
 }
 
+.lf-top-a:hover {
+  color: #F59908;
+  transform: scale(1.2, 1.2);
+  border-bottom: 1px solid #F59908;
+}
 /*lower footer styling end here*/
-
 /*=================================
   footer styling ends here
 =================================*/

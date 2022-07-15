@@ -310,19 +310,10 @@ nav {
   transition: color 0.5s ease,border-bottom 0.5s ease,transform 0.5s ease;
 }
 
-.navlist a:hover {
-  color: #F59908;
-  transform: scale(1.2,1.2);
-  border-bottom: 1px solid #F59908;
-}
-
 .navlist .active-tab, .active-tab {
   color: #F59908;
 }
 
-.pages:hover+.sub-page-list {
-  display: flex;
-}
 /*styling for sub page list start here*/
 .sub-page-list {
   width: 100%;
@@ -350,12 +341,6 @@ nav {
   font-size: 9px;
   text-indent: -9999px;
   transition: color 0.5s ease, border-bottom 0.5s ease,transform 0.5s ease;
-}
-
-.sbrand:hover {
-  color: #F59908;
-  transform: scale(1.2, 1.2);
-  border-bottom: 1px solid #F59908;
 }
 
 .fb::before {
@@ -476,12 +461,6 @@ nav {
   transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
 }
 
-.btns-a:hover,.banner-btns .active-btn {
-  background-color: #FEAD00;
-  border: 2px solid #FEAD00;
-  color: #402C1B;
-}
-
 .banner-projects {
   width: 100%;
   margin: 60px 0 42px 0;
@@ -558,10 +537,6 @@ nav {
   object-position: center;
 }
 
-.agencies-article img:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .agencies-info {
   padding-left: 2.5%;
   -ms-flex-preferred-size: 50%;
@@ -576,10 +551,6 @@ nav {
   line-height: 25px;
   letter-spacing: 1px;
   transition: text-decoration 0.5s ease;
-}
-
-.article-heading-a:hover {
-  text-decoration: underline;
 }
 
 .agencies-info p {
@@ -623,10 +594,6 @@ nav {
   font-weight: bold;
   text-transform: capitalize;
   transition: text-decoration 0.5s ease;
-}
-
-.article-subheading-a:hover {
-  text-decoration: underline;
 }
 
 .sub-article p {
@@ -713,11 +680,6 @@ h3 {
   font-size: 9px;
 }
 
-.blog-date-a:hover {
-  color: #FFF;
-  text-decoration: underline;
-}
-
 .blog-heading-a {
   margin: 5px 0px;
   color: #FFF;
@@ -726,11 +688,6 @@ h3 {
   text-transform: capitalize;
 }
 
-.blog-heading-a:hover {
-  color: #F59908;
-  text-decoration: underline;
-}
- 
 .blog-info p {
   font-size: 9px;
   line-height: 18px;
@@ -880,6 +837,7 @@ footer {
 } */
 /*styling for upper footer infinitude start here*/
 .infinitude {
+  margin: 0 1%;
   flex-basis: 33.33%;
 }
 
@@ -925,12 +883,6 @@ footer {
   transition: color 0.5s ease, border-bottom 0.5s ease, transform 0.5s ease;
 }
 
-.uf-a:hover {
-  color: #F59908;
-  transform: scale(1.2, 1.2);
-  border-bottom: 1px solid #F59908;
-}
-
 .uf-fb::before {
   margin-right: 5%;
   content: "\f39e";
@@ -973,6 +925,7 @@ footer {
 /*styling for upper footer infinitude end here*/
 /*styling for upper footer quick links start here*/
 .quick-links {
+  margin: 0 1%;
   flex-basis: 33.33%;
 }
 
@@ -989,6 +942,7 @@ footer {
 }
 
 .ql-first, .ql-second {
+  margin: 0 0.5%;
   display: flex;
   flex-basis: 50%;
   flex-direction: column;
@@ -1004,12 +958,6 @@ footer {
   transition: color 0.5s ease, border-bottom 0.5s ease, transform 0.5s ease;
 }
 
-.quick-lists a:hover {
-  color: #F59908;
-  transform: scale(1.2, 1.2);
-  border-bottom: 1px solid #F59908;
-}
-
 .quick-lists a::before {
   margin: 0 2%;
   content: "\f101";
@@ -1019,6 +967,7 @@ footer {
 /*styling for upper footer quick links end here*/
 /*styling for upper footer contact info start here*/
 .uf-contact-info {
+  margin: 0 1%;
   flex-basis: 33.33%;
 }
 
@@ -1044,12 +993,6 @@ footer {
   text-transform: capitalize;
   letter-spacing: 1px;
   transition: color 0.5s ease, border-bottom 0.5s ease, transform 0.5s ease;
-}
-
-.contact-info-list a:hover {
-  color: #F59908;
-  transform: scale(1.2, 1.2);
-  border-bottom: 1px solid #F59908;
 }
 
 .ci-address-a::before {
@@ -1112,18 +1055,175 @@ footer {
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
 }
-
-.lf-top-a:hover {
-  color: #F59908;
-  transform: scale(1.2, 1.2);
-  border-bottom: 1px solid #F59908;
-}
 /*lower footer styling end here*/
 /*=================================
   footer styling ends here
 =================================*/
 
 /*media query starts*/
+/* remove hover effet from mobile start here */
+@media only screen and (min-width: 1024px) {
+  .navlist a:hover {
+    color: #F59908;
+    transform: scale(1.2, 1.2);
+    border-bottom: 1px solid #F59908;
+  }
+
+  .pages:hover+.sub-page-list {
+    display: flex;
+  }
+
+  .sbrand:hover {
+    color: #F59908;
+    transform: scale(1.2, 1.2);
+    border-bottom: 1px solid #F59908;
+  }
+
+  .btns-a:hover,
+  .banner-btns .active-btn {
+    background-color: #FEAD00;
+    border: 2px solid #FEAD00;
+    color: #402C1B;
+  }
+
+  .agencies-article img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .article-heading-a:hover {
+    text-decoration: underline;
+  }
+
+  .article-subheading-a:hover {
+    text-decoration: underline;
+  }
+
+  .blog-date-a:hover {
+    color: #FFF;
+    text-decoration: underline;
+  }
+  
+  .blog-heading-a:hover {
+    color: #F59908;
+    text-decoration: underline;
+  }
+
+
+  .uf-a:hover {
+    color: #F59908;
+    transform: scale(1.2, 1.2);
+    border-bottom: 1px solid #F59908;
+  }
+
+  .quick-lists a:hover {
+    color: #F59908;
+    transform: scale(1.2, 1.2);
+    border-bottom: 1px solid #F59908;
+  }
+
+  .contact-info-list a:hover {
+    color: #F59908;
+    transform: scale(1.2, 1.2);
+    border-bottom: 1px solid #F59908;
+  }
+
+  .lf-top-a:hover {
+    color: #F59908;
+    transform: scale(1.2, 1.2);
+    border-bottom: 1px solid #F59908;
+  }
+}
+/* remove hover effet from mobile start here */
+
+/*media query for 1235px start here*/
+@media only screen and (max-width:1235px) {
+  .agencies-article img {
+    min-width: 270px;
+    min-height: 100px;
+  }
+
+  .article-info-a {
+    margin: 10px 0;
+  }
+
+}
+
+/*media query for 1235px end here*/
+
+/*media query for 767px start here*/
+@media only screen and (max-width:767px) {
+  h1 {
+    flex-basis: 30%;
+    order: 1;
+  }
+
+  .hamburger {
+    display: block;
+    flex-basis: 30%;  
+    order: 3;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    display: block;
+    background-color: #FFF;
+    transition: all 0.3s ease-in-out;
+    text-indent: -9999px;
+  }
+  
+  .hamburger:hover+nav {
+    display: flex;
+  }
+  
+  header .wrapper {
+    width: 59%;
+    padding: 17px 0;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #686861;
+    justify-content: space-between;
+  }
+  
+  nav {
+    width: 50%;
+    height: 200px;
+    background: #666;
+    display: none;
+    position: absolute;
+    top: 63px;
+    right: 13%;
+    align-items: center;
+    flex-basis: 40%;
+    flex-direction: column;
+    order: 2;
+  } 
+}
+/*media query for 767px end here*/
+
+/*media query for 1210px start here*/
+@media only screen and (max-width:1210px) {
+  .agencies-article img {
+    min-width: 270px;
+    min-height: 100px;
+  }
+
+  .article-info-a {
+    margin: 0; 
+  }
+
+  .quick-lists {
+    flex-direction: column;
+  }
+
+  .ql-first,.ql-second {
+    flex-basis: 100%;
+  }
+
+}
+/*media query for 1210px end here*/
+
 /*media query for 1280px start here*/
 /* @media only screen and (max-width:1280px) {
   .navlist {
@@ -1256,83 +1356,6 @@ footer {
 } */
 
 /* media query for 1025px end here */
-
-/* remove hover effet from mobile */
-/* @media only screen and (min-width: 1024px) {
-  .navlist :nth-child(3) a:hover::after {
-    color: #D3930F;
-  }
-
-  .navlist :nth-child(3) :hover+.sub-page-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .navlist li a:hover {
-    padding-bottom: 3px;
-    border-bottom: 1px solid #D3930F;
-    color: #D3930F;
-  }
-
-  .social-site-list :first-child:hover::before {
-    color: #D3930F;
-  }
-
-  .social-site-list :nth-child(2):hover::before {
-    color: #D3930F;
-  }
-
-  .social-site-list :last-child:hover::before {
-    color: #D3930F;
-  }
-
-  .agencies-info a:hover {
-    background-color: #FFF;
-    border: 1px solid #FEAD00;
-    color: #FEAD00;
-  }
-
-  .uf-social-list :first-child :hover::before {
-    color: #FEAD00;
-  }
-
-  .uf-social-list :nth-child(2) :hover::before {
-    color: #FEAD00;
-  }
-
-  .uf-social-list :nth-child(3) :hover::before {
-    color: #FEAD00;
-  }
-
-  .uf-social-list :nth-child(4) :hover::before {
-    color: #FEAD00;
-  }
-
-  .uf-social-list :last-child :hover::before {
-    color: #FEAD00;
-  }
-
-  .quick-lists ul a:hover {
-    color: #FEAD00;
-  }
-
-  .phone a:hover,
-  .tele-phone a:hover,
-  .mail a:hover {
-    color: #FEAD00;
-  }
-
-  .phone:hover::before,
-  .tele-phone:hover::before,
-  .mail:hover::before {
-    color: #FEAD00;
-  }
-
-  .lf-content a:hover::before {
-    color: #FEAD00;
-  }
-} */
 
 /*media query for 995px starts here*/
 /* @media only screen and (max-width: 995px) { */

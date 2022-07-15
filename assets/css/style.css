@@ -269,6 +269,10 @@ h1 {
   flex-basis: 40%;
   order: 1;
 }
+
+h1 img {
+  width: 80%;
+}
 /*styling for h1 end here*/
 /*styling for hamburger start here*/
 .hamburger {
@@ -294,6 +298,7 @@ nav {
   margin: 0 5%;
   width: 100%;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
 }
@@ -302,235 +307,81 @@ nav {
   color: #F7F8F7;
   font-size: 9px;
   text-transform: uppercase;
+  transition: color 0.5s ease,border-bottom 0.5s ease,transform 0.5s ease;
+}
+
+.navlist a:hover {
+  color: #F59908;
+  transform: scale(1.2,1.2);
+  border-bottom: 1px solid #F59908;
 }
 
 .navlist .active-tab, .active-tab {
-  color: blue;
+  color: #F59908;
 }
 
+.pages:hover+.sub-page-list {
+  display: flex;
+}
+/*styling for sub page list start here*/
 .sub-page-list {
+  width: 100%;
+  left: 0;
+  right: 0;
   display: none;
+  align-items: center;
+  backdrop-filter: blur(3px);
+  flex-direction: column;
+  position: absolute;
 }
-
+/*styling for sub page list end here*/
+/*styling for social site list start here*/
 .social-site-list {
   display: flex;
   flex-basis: 20%;
-  overflow: hidden;
 }
 
 .social-site-list li {
-  margin: 0 16.5%;
+  margin: 0 9%;
 }
 
 .sbrand {
-  text-indent: -999px;
+  text-indent: -9999px;
+  transition: color 0.5s ease, border-bottom 0.5s ease,transform 0.5s ease;
 }
 
 .sbrand:hover {
-  color: red;
+  color: #F59908;
+  transform: scale(1.2, 1.2);
+  border-bottom: 1px solid #F59908;
 }
 
 .fb::before {
-  position: absolute;
   margin-right: 5%;
   content: "\f082";
+  float: right;
   font-family: "Font Awesome 5 Brands";
-  text-indent: 999px;
+  text-indent:0;
 }
 
 .tweet::before {
-  position: absolute;
   margin-right: 5%;
   content: "\f099";
+  float: right;
   font-family: "Font Awesome 5 Brands";
-  text-indent: 999px;
+  text-indent:0;
 }
 
 .insta::before {
-  position: absolute;
   margin-right: 5%;
   content: "\f16d";
+  float: right;
   font-family: "Font Awesome 5 Brands";
-  text-indent: 999px;
+  text-indent:0;
 }
-
+/*styling for social site list end here*/
 /*styling for nav-content end here*/
 /*styling for header end here*/
-
-/* header .wrapper {
-  width: 59%;
-  padding: 17px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 1px solid #686861;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-h1 {
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 30%;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.hamburger {
-  display: none;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-/*styling for nav start here*/
-/* nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 57%;
-  flex-basis: 57%;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-ordinal-group: 4;
-  -ms-flex-order: 3;
-  order: 3;
-} */
-
-/*styling for navlist start here*/
-/* .navlist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 78%;
-  flex-basis: 78%;
-}
-
-.navlist li {
-  margin-right: 9%;
-  margin-left: 1%;
-}
-
-.navlist :nth-child(3) a::after {
-  margin-left: 5%;
-  content: "\f41f";
-  color: #FFF;
-  font-size: 7px;
-  font-family: "Font Awesome 5 Brands";
-  text-indent: 0;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-}
-
-.navlist li a {
-  padding-top: 7px;
-  color: #FFF;
-  font-size: 9.4px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-}
-
-.sub-page-list {
-  width: 5%;
-  display: none;
-  position: absolute;
-  top: 35px;
-  background-color: rgb(0, 0, 0, 0.5);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.sub-page-list li {
-  width: 100%;
-  height: 20px;
-}
-
-.sub-page-list li a {
-  width: 100%;
-  text-align: center;
-}
-
-.sub-page-list li a::after {
-  display: none;
-} */ 
-
-/*styling for navlist end here*/
-/*styling for social site list start here*/
-/* .social-site-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 16%;
-  flex-basis: 16%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.social-site-list li {
-  width: 33.33%;
-  position: relative;
-}
-
-.social-site-list a {
-  position: absolute;
-  text-indent: -9999px;
-}
-
-.social-site-list :first-child a::before {
-  position: absolute;
-  top: -5px;
-  content: "\f082";
-  color: #FFF;
-  font-family: "Font Awesome 5 Brands";
-  text-indent: 9999px;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-}
-
-.social-site-list :nth-child(2) a::before {
-  position: absolute;
-  top: -5px;
-  content: "\f099";
-  color: #FFF;
-  font-family: "Font Awesome 5 Brands";
-  text-indent: 9999px;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-}
-
-.social-site-list :last-child a::before {
-  position: absolute;
-  top: -5px;
-  content: "\f16d";
-  color: #FFF;
-  font-family: "Font Awesome 5 Brands";
-  text-indent: 9999px;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-} */
-
-/*styling for social site list end here*/
-/*styling for nav end here*/
 /*=================================
   Header styling ends here
 =================================*/
@@ -539,7 +390,6 @@ h1 {
   main styling starts here
 =================================*/
 /*styling for banner section start here*/
-
 .banner-section .wrapper {
   max-width: 100%;
   width: 100%;
@@ -553,16 +403,13 @@ h1 {
   overflow: hidden;
 }
 
+/*styling for slider start here*/
 .slider {
-  width: 100%;
-  height: 100%;
   position: absolute;
   overflow: hidden;
 }
 
 .slider li {
-  width: 100%;
-  height: auto;
   background-color: rgb(0, 0, 0, 0.5);
 }
 
@@ -570,15 +417,18 @@ h1 {
   width: 100%;
   height: 100%;
   position: relative;
+  object-fit: cover;
+  object-position:center;
   z-index: -1;
 }
 
 .slider :not(:first-child) {
   display: none;
 }
-
+/*styling for slider end here*/
+/*styling for banner content start here*/
 .banner-content {
-  margin: 155px 0 110px 0;
+  margin: 155px 0 15px 0;
   display: flex;
   position: relative;
   align-items: center;
@@ -611,103 +461,51 @@ h1 {
 }
 
 .banner-btns li {
-  width: 9%;
+  width: 8.7%;
 }
 
 .banner-btns a {
-  padding: 10px 19.5%;
+  padding: 9px 18%;
   background: transparent;
-  border: 1px solid #D9EBDF;
+  border: 2px solid #D9EBDF;
   border-radius: 3px;
   color: #D9EBDF;
   font-size: 10px;
+  transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
 }
 
-.banner-btns a:hover,.banner-btns .active-btn {
+.btns-a:hover,.banner-btns .active-btn {
   background-color: #FEAD00;
-  border: transparent;
+  border: 2px solid #FEAD00;
   color: #402C1B;
 }
 
 .banner-projects {
   width: 100%;
-  margin: 60px 0;
+  margin: 60px 0 42px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .banner-projects li {
+  width: 9%;
   margin: 0 4%;
+  display: flex;
+  align-items: center;
   color: #FFF;
+  font-size: 15px;
+  text-transform: capitalize;
 }
 
 .text-project {
-  margin-right:1%;
-}
-
-/* .banner-btns {
-  width: 100%;
-  text-align: center;
-}
-
-.banner-btns a {
-  padding: 10px 1.5%; 
-  margin: 0 0.2%; 
-  background-color: transparent;
-  border: 1px solid #FFF;
-  border-radius: 3px;
-  color: #FFF;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  -webkit-transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
-  -o-transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
-  transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
-}
-
-.banner-btns a:hover {
-  background-color: #FEAD00;
-  border: 1px solid #FEAD00;
-  color: #000;
-}
-
-.banner-content ul {
-  width: 100%;
-  padding-top: 105px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.banner-content ul li {
-  margin: 0 6% 0 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #FFF;
-  font-size: 17px;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-}
-
-.banner-content ul li span {
-  padding-right: 20%;
-  font-size: 23px;
+  margin-right: 15%;
+  font-size: 20px;
 }
 
 .dot-list {
   width: 100%;
-  padding: 70px 0 40px 0;
+  margin: 15px 0;
   text-align: end;
 }
 
@@ -723,18 +521,18 @@ h1 {
   font-size: 7px;
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
-} */
-
+}
+/*styling for banner content end here*/
 /*styling for banner section end here*/
+
 /*styling for agencies section start here*/
 .agencies {
-  padding-top: 75px;
-  padding-bottom: 90px;
+  padding: 65px 0;
   background-color: #F7F7F7;
 }
 
 .agencies-article {
-  padding-bottom: 40px;
+  padding:0 0 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -749,35 +547,48 @@ h1 {
   flex-basis: 50%;
 }
 
-.agencies-article figure img {
-  max-width: 425px;
-  max-height: 285px;
+.agencies-article img {
+  max-width: 363px;
+  max-height: 242px;
   border-radius: 3px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .agencies-info {
-  padding-left: 2%;
+  padding-left: 2.5%;
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
 }
 
-.agencies-info h4 {
-  padding-top: 3px;
-  font-size: 18px;
+.article-heading-a {
+  color: #2A1B1B;
+  font-size: 15px;
   font-weight: bold;
   text-transform: capitalize;
-  line-height: 30px;
+  line-height: 25px;
   letter-spacing: 1px;
 }
 
 .agencies-info p {
-  margin-top: 5px;
-  color: #96909B;
-  font-size: 12px;
+  margin: 5px 0; 
+  color: #B6A096;
+  font-size: 10px;
   line-height: 20px;
 }
 
-.agencies-info a {
+.article-info-a {
+  padding: 10px 5%;
+  margin: 20px 0;
+  background-color: #FEAD00;
+  border-radius: 3px;
+  border: 2px solid #FEAD00;
+  color: #403217;
+  font-size: 10px;
+  transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
+}
+
+/* .agencies-info a {
   margin-top: 15px;
   padding: 10px 5%;
   background-color: #FEAD00;
@@ -790,7 +601,7 @@ h1 {
   -webkit-transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
   -o-transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
   transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
-}
+} */
 
 .agencies-list {
   padding-top: 55px;

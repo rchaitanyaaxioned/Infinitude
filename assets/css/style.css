@@ -659,91 +659,69 @@ h3 {
   letter-spacing: 2px;
 }
 
+/*styling for blog list start here*/
 .blog-list {
   margin-top: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .blog-list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.blog-list li figure {
-  -ms-flex-preferred-size: 63%;
+.blog-article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.blog-article-img {
+  width: 100%;
+  height: 100%;
   flex-basis: 63%;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
   order: 1;
 }
 
-.blog-list li div {
+.blog-article-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-info {
   padding: 30px 5%;
-  background-color: rgb(27, 31, 36);
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-.blog-info span {
-  color: #FEAD00;
-  font-size: 10px;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-.blog-info h4 {
-  padding-top: 5px;
+  background-color: #1B1F24;
   color: #FFF;
-  font-size: 17px;
+  flex-basis: 50%;
+  order: 2;
+}
+
+.reverse-blog-img {
+  order: 2;
+}
+
+.reverse-blog-info {
+  order: 1;
+}
+
+.blog-date-a {
+  color: #FEAD00;
+  font-size: 9px;
+}
+
+.blog-heading-a {
+  margin: 5px 0;
+  font-size: 15px;
   font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: capitalize;
 }
-
+ 
 .blog-info p {
-  padding-top: 5px;
-  color: #F7F7F9;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 9px;
+  line-height: 18px;
 }
-
-.blog-list :nth-child(3) figure {
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-.blog-list :nth-child(3) div {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.blog-list :last-child figure {
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-.blog-list :last-child div {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
+/*styling for blog list end here*/
 /*styling for blog section end here*/
 
 /*styling for testimonials section start here*/

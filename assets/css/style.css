@@ -458,6 +458,7 @@ nav {
   border-radius: 3px;
   color: #D9EBDF;
   font-size: 10px;
+  text-transform: capitalize;
   transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
 }
 
@@ -1173,7 +1174,7 @@ footer {
     text-indent: -9999px;
   }
   
-  .hamburger:hover+nav {
+  .hamburger:hover+.nav-content {
     display: flex;
   }
   
@@ -1185,20 +1186,76 @@ footer {
     border-bottom: 1px solid #686861;
     justify-content: space-between;
   }
-  
-  nav {
-    width: 50%;
-    height: 200px;
-    background: #666;
+
+  .nav-content {
+    width: 100%;
     display: none;
     position: absolute;
-    top: 63px;
-    right: 13%;
-    align-items: center;
-    flex-basis: 40%;
+    top: 46px;
+    right: 0;
+    backdrop-filter: blur(3px);
     flex-direction: column;
     order: 2;
-  } 
+  }
+
+  .navlist {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .social-site-list {
+    justify-content: center;
+  }
+
+  .banner-content {
+    margin: 95px 0 15px 0;
+  }
+
+  .banner-content h2 {
+    font-size: 35px;
+  }
+
+  .banner-btns {
+    margin: 10px 0;
+  }
+
+  .banner-btns li {
+    width: 15%;
+  }
+
+  .banner-projects {
+    margin: 15px 0 15px 0;
+  }
+
+  .agencies {
+    padding: 50px 0 35px 0;
+  }
+
+  .agencies-article {
+    width: 100%;
+    padding: 0 0 15px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .agencies-article figure {
+    width: 100%;
+    text-align: center;
+    flex-basis: 0; 
+  }
+
+  .agencies-info {
+    width: 100%;
+    padding-left: 0;
+    margin: 10px 0;
+    text-align: center;
+    flex-basis: 0;
+  }
+
+  .agencies-info p {
+    text-align: start;
+  }
 }
 /*media query for 767px end here*/
 

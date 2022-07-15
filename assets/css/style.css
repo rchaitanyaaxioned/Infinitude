@@ -725,52 +725,53 @@ h3 {
 /*styling for blog section end here*/
 
 /*styling for testimonials section start here*/
-.testimonials {
-  padding: 80px 0;
-  /* background-image: url("/assets/Images/banner3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; */
+.testimonials .wrapper {
+  width: 100%;
+}
+
+.testimonial-content {
+  position: relative;
 }
 
 .testimonial-banner {
+  position: absolute;
   background-color: rgb(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .testimonial-banner img {
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 
 .testimonials h3 {
+  padding: 65px 0 45px 0;
   color: #FFF;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: bold;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 2px;
+  z-index: 1;
 }
 
 .testimonial-list {
-  margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: 0 20% 80px 20%;
   display: flex;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .testimonial-list li {
-  padding: 40px;
+  padding: 35px 5%;
   background-color: #FFF;
   -ms-flex-preferred-size: 22%;
   flex-basis: 22%;
 }
 
 .testimonial-list li p {
-  font-size: 12px;
-  color: #A9A19A;
+  font-size: 9px;
+  color: #AAA2A8;
   line-height: 17px;
 }
 
@@ -798,8 +799,8 @@ h3 {
 }
 
 .person-info figure img {
-  max-width: 35px;
-  max-height: 35px;
+  max-width: 28px;
+  max-height: 28px;
   border-radius: 50%;
 }
 
@@ -818,7 +819,7 @@ h3 {
 
 .person-name :first-child {
   color: #452E55;
-  font-size: 13px;
+  font-size: 9px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -827,11 +828,10 @@ h3 {
 .person-name :last-child {
   margin-top: 3px;
   color: #B98F7E;
-  font-size: 10px;
+  font-size: 8px;
   font-weight: bold;
   text-transform: capitalize;
 }
-
 /*styling for testimonials section end here*/
 /*=================================
   main styling ends here

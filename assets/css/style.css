@@ -264,6 +264,7 @@ header .wrapper {
   border-bottom: 1px solid #686861;
   justify-content: space-between;
 }
+
 /*styling for h1 start here*/
 h1 {
   flex-basis: 40%;
@@ -273,12 +274,14 @@ h1 {
 h1 img {
   width: 80%;
 }
+
 /*styling for h1 end here*/
 /*styling for hamburger start here*/
 .hamburger {
   display: none;
   order: 2;
 }
+
 /*styling for hamburger end here*/
 /*styling for nav-content start here*/
 .nav-content {
@@ -307,10 +310,11 @@ nav {
   color: #F7F8F7;
   font-size: 9px;
   text-transform: uppercase;
-  transition: color 0.5s ease,border-bottom 0.5s ease,transform 0.5s ease;
+  transition: color 0.5s ease, border-bottom 0.5s ease, transform 0.5s ease;
 }
 
-.navlist .active-tab, .active-tab {
+.navlist .active-tab,
+.active-tab {
   color: #F59908;
 }
 
@@ -325,6 +329,7 @@ nav {
   flex-direction: column;
   position: absolute;
 }
+
 /*styling for sub page list end here*/
 /*styling for social site list start here*/
 .social-site-list {
@@ -340,7 +345,7 @@ nav {
   color: #F7F8F7;
   font-size: 9px;
   text-indent: -9999px;
-  transition: color 0.5s ease, border-bottom 0.5s ease,transform 0.5s ease;
+  transition: color 0.5s ease, border-bottom 0.5s ease, transform 0.5s ease;
 }
 
 .fb::before {
@@ -348,7 +353,7 @@ nav {
   content: "\f082";
   float: right;
   font-family: "Font Awesome 5 Brands";
-  text-indent:0;
+  text-indent: 0;
 }
 
 .tweet::before {
@@ -356,7 +361,7 @@ nav {
   content: "\f099";
   float: right;
   font-family: "Font Awesome 5 Brands";
-  text-indent:0;
+  text-indent: 0;
 }
 
 .insta::before {
@@ -364,8 +369,9 @@ nav {
   content: "\f16d";
   float: right;
   font-family: "Font Awesome 5 Brands";
-  text-indent:0;
+  text-indent: 0;
 }
+
 /*styling for social site list end here*/
 /*styling for nav-content end here*/
 /*styling for header end here*/
@@ -405,13 +411,14 @@ nav {
   height: 100%;
   position: relative;
   object-fit: cover;
-  object-position:center;
+  object-position: center;
   z-index: -1;
 }
 
 .slider :not(:first-child) {
   display: none;
 }
+
 /*styling for slider end here*/
 /*styling for banner content start here*/
 .banner-content {
@@ -484,6 +491,7 @@ nav {
   margin-right: 15%;
   font-size: 20px;
 }
+
 /*styling for dot list start here*/
 .dot-list {
   width: 100%;
@@ -504,6 +512,7 @@ nav {
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
 }
+
 /*styling for dot list end here*/
 /*styling for banner content end here*/
 /*styling for banner section end here*/
@@ -515,7 +524,7 @@ nav {
 }
 
 .agencies-article {
-  padding:0 0 30px 0;
+  padding: 0 0 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,7 +564,7 @@ nav {
 }
 
 .agencies-info p {
-  margin: 5px 0; 
+  margin: 5px 0;
   color: #AAA2A8;
   font-size: 10px;
   line-height: 20px;
@@ -586,7 +595,7 @@ nav {
 .sub-article h5 {
   display: flex;
   align-items: flex-start;
-} 
+}
 
 .article-subheading-a {
   width: 100%;
@@ -602,7 +611,7 @@ nav {
   color: #AAA2A8;
   font-size: 10px;
   line-height: 20px;
-} 
+}
 
 .agencies-list li h5::before {
   padding-right: 10%;
@@ -612,6 +621,7 @@ nav {
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
 }
+
 /*styling for agencies section end here*/
 
 /*styling for blog section start here*/
@@ -693,53 +703,62 @@ h3 {
   font-size: 9px;
   line-height: 18px;
 }
+
 /*styling for blog list end here*/
 /*styling for blog section end here*/
 
 /*styling for testimonials section start here*/
 .testimonials .wrapper {
+  max-width: 100%;
   width: 100%;
+
 }
 
 .testimonial-content {
+  width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .testimonial-banner {
+  width: 100%;
   position: absolute;
   background-color: rgb(0, 0, 0, 0.5);
   z-index: -1;
 }
 
 .testimonial-banner img {
+  width: 100%;
   position: relative;
   z-index: -2;
 }
 
 .testimonials h3 {
+  width: 100%;
   padding: 65px 0 45px 0;
   color: #FFF;
   font-size: 27px;
   font-weight: bold;
-  text-align: center;
   text-transform: capitalize;
   letter-spacing: 2px;
   z-index: 1;
 }
 
 .testimonial-list {
-  margin: 0 20% 80px 20%;
+  width: 55%;
+  margin: 0 0 80px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .testimonial-list li {
+  margin: 0 1%;
   height: 100%;
   padding: 35px 5%;
   background-color: #FFF;
-  -ms-flex-preferred-size: 22%;
-  flex-basis: 22%;
 }
 
 .testimonial-list li p {
@@ -805,6 +824,7 @@ h3 {
   font-weight: bold;
   text-transform: capitalize;
 }
+
 /*styling for testimonials section end here*/
 /*=================================
   main styling ends here
@@ -820,7 +840,7 @@ footer {
 }
 
 .upper-footer {
-  padding:60px 0;
+  padding: 60px 0;
   border-bottom: 1px solid #333;
 }
 
@@ -900,9 +920,9 @@ footer {
   text-indent: 0;
 }
 
-.uf-basket::before {
+.uf-dribbble::before {
   margin-right: 5%;
-  content: "\f434";
+  content: "\f17d";
   float: right;
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
@@ -923,6 +943,7 @@ footer {
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
 }
+
 /*styling for upper footer infinitude end here*/
 /*styling for upper footer quick links start here*/
 .quick-links {
@@ -942,7 +963,8 @@ footer {
   display: flex;
 }
 
-.ql-first, .ql-second {
+.ql-first,
+.ql-second {
   margin: 0 0.5%;
   display: flex;
   flex-basis: 50%;
@@ -965,6 +987,7 @@ footer {
   font-size: 13px;
   font-family: "Font Awesome 5 Solids";
 }
+
 /*styling for upper footer quick links end here*/
 /*styling for upper footer contact info start here*/
 .uf-contact-info {
@@ -997,7 +1020,7 @@ footer {
 }
 
 .ci-address-a::before {
-  padding:0 1%;
+  padding: 0 1%;
   content: "\f3c5";
   font-size: 10px;
   font-family: "Font Awesome 5 Solids";
@@ -1023,6 +1046,7 @@ footer {
   font-size: 10px;
   font-family: "Font Awesome 5 Solids";
 }
+
 /*styling for upper footer contact info end here*/
 /*upper footer styling end here*/
 
@@ -1056,6 +1080,7 @@ footer {
   font-family: "Font Awesome 5 Brands";
   text-indent: 0;
 }
+
 /*lower footer styling end here*/
 /*=================================
   footer styling ends here
@@ -1103,7 +1128,7 @@ footer {
     color: #FFF;
     text-decoration: underline;
   }
-  
+
   .blog-heading-a:hover {
     color: #F59908;
     text-decoration: underline;
@@ -1134,6 +1159,7 @@ footer {
     border-bottom: 1px solid #F59908;
   }
 }
+
 /* remove hover effet from mobile start here */
 
 /*media query for 1235px start here*/
@@ -1160,10 +1186,10 @@ footer {
 
   .hamburger {
     display: block;
-    flex-basis: 30%;  
+    flex-basis: 30%;
     order: 3;
   }
-  
+
   .bar {
     width: 25px;
     height: 3px;
@@ -1173,11 +1199,11 @@ footer {
     transition: all 0.3s ease-in-out;
     text-indent: -9999px;
   }
-  
+
   .hamburger:hover+.nav-content {
     display: flex;
   }
-  
+
   header .wrapper {
     width: 59%;
     padding: 17px 0;
@@ -1242,7 +1268,7 @@ footer {
   .agencies-article figure {
     width: 100%;
     text-align: center;
-    flex-basis: 0; 
+    flex-basis: 0;
   }
 
   .agencies-info {
@@ -1257,6 +1283,7 @@ footer {
     text-align: start;
   }
 }
+
 /*media query for 767px end here*/
 
 /*media query for 1210px start here*/
@@ -1267,18 +1294,20 @@ footer {
   }
 
   .article-info-a {
-    margin: 0; 
+    margin: 0;
   }
 
   .quick-lists {
     flex-direction: column;
   }
 
-  .ql-first,.ql-second {
+  .ql-first,
+  .ql-second {
     flex-basis: 100%;
   }
 
 }
+
 /*media query for 1210px end here*/
 
 /*media query for 1280px start here*/
@@ -1416,9 +1445,9 @@ footer {
 
 /*media query for 995px starts here*/
 /* @media only screen and (max-width: 995px) { */
-  /*styling for hamburger start here*/
+/*styling for hamburger start here*/
 
-  /* h1 {
+/* h1 {
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     -webkit-box-ordinal-group: 2;
@@ -1488,8 +1517,8 @@ footer {
     order: 2;
   } */
 
-  /*styling for hamburger end here*/
-  /* .navlist {
+/*styling for hamburger end here*/
+/* .navlist {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
